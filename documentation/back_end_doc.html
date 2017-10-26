@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -41,11 +41,10 @@
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<h2>UMD AR</h2>
+							<h2>Back End Documentation</h2>
 							<p>Welcome to the UMD AR Documentation Site<br />
 							Thanks to <a href="https://html5up.net/" target="_blank">HTML5 UP</a> for the spiffy template<br />
 							<br />
-							<a href="http://bit.ly/umdar-facebook" target="_blank">UMD AR Club Page</a></p>
 							<ul class="actions">
 								<li><a href="#one" class="button special scrolly">Shape Reality</a></li>
 							</ul>
@@ -57,15 +56,73 @@
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>About Us<br />
-								</h2>
-								<p>UMD AR Club is an organization in which great people change reality. This is a place where Augmented and Mixed Reality pioneers and developers get together to build fantastic applications, while using the Hololens and other hollow devices. Our members mainly work in teams, but individuals are welcomed as well. So, feel free to come out and enjoy what UMD AR has to offer!</p>
+								<h2>Base Architecture</h2>
+								<ul class="features">
+									<li>
+									<h3>Base Folder</h3>
+									<p>arweb/ [Base Folder]</p>
+									<p>
+										Each app on the right will have a structure like this:
+										<p>
+											<pre>migrations/</pre>
+											<pre>admin.py</pre>
+											<pre>apps.py</pre>
+											<pre>models.py</pre>
+											<pre>tests.py</pre>
+											<pre>urls.py</pre>
+											<pre>views.py</pre>
+
+										</p>
+									</p>
+									</li>
+
+									<li>
+									<h3>DJango Apps</h3>
+									<p>
+										about
+										<p>
+											About webpage. [Tentative, might be merged with arhome]
+										</p>
+										<hr/>
+										arhome 
+										<p>
+											Home Page.
+										</p>
+										<hr/>
+										arlivefeed 
+										<p>
+											Live Tutorial Videos Page.
+										</p>
+										<hr/>
+										arvideos 
+										<p>
+											Videos Storage Page.
+										</p>
+										<hr/>
+										arweb 
+										<p>
+											Controller Of All Apps.
+										</p>
+										<hr/>
+										contribution 
+										<p>
+											Donations Page.
+										</p>
+										<hr/>
+										events 
+										<p>
+											Real-Time Events Update Page.
+										</p>
+										<hr/>
+										leadership 
+										<p>
+											Leadership Team Page.
+										</p>
+									</p>
+									</li>
+
+								</ul>
 							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-code major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon fa-signal major style3"><span class="label">Dolor</span></span></li>
-							</ul>
 						</div>
 					</section>
 
@@ -73,34 +130,9 @@
 					<section id="two" class="wrapper style3 special">
 						<div class="inner">
 							<header class="major">
-								<h2>UMD AR Web Development Team</h2>
-								<p>Meet the gang.</p>
+								<h2>Database</h2>
 							</header>
 							<ul class="features">
-								<li class="icon fa-user">
-									<h3>Brian Servia</h3>
-									<p>Big man on campus.</p>
-								</li>
-								<li class="icon fa-laptop">
-									<h3>Sean Brown</h3>
-									<p>Big man on the web team.</p>
-								</li>
-								<li class="icon fa-code">
-									<h3>Tomer Krayzman</h3>
-									<p>Freshman wonder.</p>
-								</li>
-								<li class="icon fa-male">
-									<h3>Matthew Muccio</h3>
-									<p>Just a big man.</p>
-								</li>
-								<li class="icon fa-black-tie">
-									<h3>Cliff Bakalian</h3>
-									<p>Dresses for success.</p>
-								</li>
-								<li class="icon fa-maxcdn">
-									<h3>Mario Jayakumar</h3>
-									<p>Super Mario.</p>
-								</li>
 							</ul>
 						</div>
 					</section>
@@ -110,21 +142,13 @@
 						<section class="spotlight">
 							<!--<div class="image"><img src="images/pic01.jpg" alt="" /></div>-->
 							<div class="content">
-								<h2>Core Values</h2>
-								<p>Dedication</p>
-								<p>Relationships</p>
-								<p>Creation</p>
+								<h2></h2>
 							</div>
 						</section>
 						<section class="spotlight">
 							<!--<div class="image"><img src="images/pic02.jpg" alt="" /></div>-->
 							<div class="content">
-								<h2>Technologies We Are Using</h2>
-								<p><a href="https://aws.amazon.com/" target="_blank">Amazon Web Services (AWS)</a></p>
-								<p><a href="https://www.babylonjs.com/" target="_blank">Babylon.js</a></p>
-								<p><a href="https://www.djangoproject.com/" target="_blank">Django</p>
-								<p><a href="https://about.gitlab.com/" target="_blank">GitLab</a></p>
-								<p><a href="https://www.mysql.com/" target="_blank">MySQL</a></p>
+								<h2></h2>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -166,13 +190,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/main.js"></script>
 
 	</body>
 </html>
